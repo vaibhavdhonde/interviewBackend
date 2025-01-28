@@ -11,6 +11,7 @@
     <groupId>com.ib</groupId>
     <artifactId>InterviewBackend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>war</packaging> <!-- Change packaging to war -->
     <name>InterviewBackend</name>
     <description>InterviewBackend</description>
     <url/>
@@ -46,7 +47,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope> <!-- Add this dependency with provided scope -->
+        </dependency>
         <dependency>
             <groupId>com.mysql</groupId>
             <artifactId>mysql-connector-j</artifactId>
